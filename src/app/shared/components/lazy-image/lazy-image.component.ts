@@ -20,8 +20,10 @@ export class LazyImageComponent implements OnInit{
   }
 
   isLoaded():void{
-    this.hasLoaded = true;
-    console.log(this.hasLoaded);
+    setTimeout(() => this.hasLoaded = true , 500)
+
+
+
   }
 
 }
